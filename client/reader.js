@@ -29,8 +29,8 @@ var nconf = require('nconf');
 var hostname = nconf.get('hostname');
 var apikey = nconf.get('apikey');
 var identifier = nconf.get('identifier');
-var sendFunctionCode = nconf.get('sendFunctionCode') || false;
-var useTimestamp = nconf.get('useTimestamp') || true;
+var sendFunctionCode = nconf.get('sendFunctionCode') ?? false;
+var useTimestamp = nconf.get('useTimestamp') ?? true;
 var EASOpts = nconf.get('EAS'); // Import EAS Config Object Ref Pull 435
 
 
